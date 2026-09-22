@@ -1,0 +1,13 @@
+<button onclick="findMyHouse()">Find My Location</button>
+
+<script>
+function findMyHouse() {
+  const latitude = 43.67;   // put your latitude here
+  const longitude = -79.3794; // put your longitude here
+
+  const mapsURL =
+    `https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`;
+
+  window.open(mapsURL, "_blank");
+}
+</script>
